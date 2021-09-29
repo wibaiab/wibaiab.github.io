@@ -3,14 +3,17 @@
 	<head>
   	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WIBAI Redovisning</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-		<link rel="stylesheet" href="css/wibai.css">
+		<title>WIBAI Redovisning - Hem</title>
+		
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 		
 		<meta name="description" content="WIBAI Redovisning finns i Nyköping och erbjuder en mängd tjänster inom ekonomi och redovisning. Vi skräddarsyr ett upplägg som passar dig.">
 		
 		<!-- Social media markup -->
-		<meta property="og:image" content="wibai.se/LogoWIBAI250.png" />
+		<meta property="og:image" content="wibai.se/img/LogoWIBAI250.png" />
 		<meta property="og:title" content="WIBAI Redovisning" />
 		<meta property="og:url" content="wibai.se" />
 		<meta property="og:type" content="website" />
@@ -28,69 +31,143 @@
 		</script>
 
 	</head>
-	<body>
+	<body data-bs-spy="scroll" data-bs-target="#mainNav" class="bg-light">
 		
-		<nav class="navbar is-spaced is-dark" role="navigation" aria-label="main navigation" id="top">
-			<div class="navbar-brand">
-				<a class="navbar-item" href="#top">
-					<img src="img/Logo WIBAI.png" height="28"> <span class="is-size-4">&nbsp;Redovisning</span>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container px-4">
+				<a class="navbar-brand" href="#page-top">
+					<img src="img/Logo WIBAI.png" alt="WIBAI Logo" height="26" class="d-inline-block align-text-top">
+					Redovisning
 				</a>
-
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
-
-			<div id="navMenu" class="navbar-menu">
-				<div class="navbar-end">
-					<a class="navbar-item" href="#about">Om</a>
-					<a class="navbar-item" href="#services">Tjänster</a>
-					<a class="navbar-item" href="#contact">Kontakt</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="#about">Om</a></li>
+						<li class="nav-item"><a class="nav-link" href="#services">Tjänster</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 		
-		<section class="hero is-fullheight-with-navbar heroimg">
-			<div class="hero-body">
-				<div class="container has-text-centered">
-					<p class="title">
-						Din redovisningskonsult
-					</p>
-					<p class="subtitle">
-						Vi erbjuder en mängd tjänster inom ekonomi och redovisning och skräddarsyr ett upplägg som passar ditt företag.
-					</p>
+		<!-- Hero image -->
+		<header id="page-top">
+			<div
+				class="text-center bg-image"
+				style="
+					background-image: url('img/desk-593327_1920.jpg');
+					background-position-x: center;
+					background-position-y: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					transform: translate3d(0px, 0px, 0px);
+					height: 400px;
+					">
+				<div 
+					class="d-flex justify-content-center align-items-center h-100"
+					style="background-color: rgba(0, 0, 0, 0.6); color: white;"
+					>
+					<div style="margin-top: 28px">
+						<h1 class="mb-3">Din redovisningskonsult</h1>
+						<p class="mb-3 fs-6" style="max-width: 500px; padding: 0 20px">
+							Vi erbjuder en mängd tjänster inom ekonomi och redovisning och skräddarsyr ett upplägg som passar ditt företag.
+						</p>
+						<a class="btn btn-outline-light btn-lg" style="margin-top: 15px" href="#contact" role="button">
+							Berätta vad du behöver!
+						</a>
+					</div>
 				</div>
 			</div>
-		</section>
+		</header>
+		
+		
+		<!-- Innehåll -->
+		<div class="container">
+			<div class="row py-5" id="about">
+				<h1 class="text-center">Om WIBAI Redovisning</h1>
+				<div class="d-flex">
+					<div class="flex-fill  mx-3 p-3 bg-white border rounded">
+						<p>
+							Jag som driver WIBAI Redovisning heter Daniel Wikman och jag har examen som redovisningskonsult från yrkeshögskolan.
+							Jag har även cirka 15 års praktisk erfarenhet av bokföring och lönehantering.
+						</p>
+						<p>	
+							Mitt företag är beläget i Nyköping. Var du har ditt företag spelar inte så stor roll då jag gärna arbetar 
+							på ett digitalt sätt. Nu för tiden kan kundfakturor/leverantörsfakturor oftast skickas/mottagas som pdf eller e-faktura.
+							De underlagen som ändå kommer som papper scannar och skickar du direkt till redovisningssystemet. Om du föredrar att jobba 
+							på ett mer klassiskt vis med pappersunderlag kan du posta de till mig alternativt om du finns inom rimliga avstånd så kan 
+							jag komma till dig och utföra arbetet.
+						</p>
+						<p>
+							Jag arbetar i det populära ekonomisystemet Fortnox. Har du ett annat ekonomisystem sedan tidigare så hjälper jag dig att 
+							importera till Fortnox.
+						</p>
+						<p>
+							Jag blir gärna din samarbetspartner inom ekonomi och redovisning.
+						</p
+						<a class="btn btn-outline-dark btn-lg mt-3" href="#contact" role="button">Kontakta mig!</a>
+					</div>
+					<div class="d-none d-md-block ms-5">
+						<img src="img/daniel.jpeg" width="200px" alt="Daniel" class="rounded"/>
+					</div>
+				</div>
+			</div>
+		
+		
+			<div class="row pt-5 justify-content-center text-center" id="services">
+				<h1>Tjänster</h1>
+				<div class="m-3 p-3 w-75 text-center rounded border bg-white">
+					Vi erbjuder en mängd tjänster inom ekonomi och redovisning och skräddarsyr ett upplägg som passar ditt företag. Tjänsterna nedan är ett urval av de tjänster jag erbjuder.
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-sm-2 g-4 text-center pb-5">
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Bokföring</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Bokslut</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Årsredovisning</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Deklarationer</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Lönehantering</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Fakturering</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Betalservice</div></div>
+				<div class="col"><div class="p-4 rounded border fs-5 bg-white">Rådgivning</div></div>
+			</div>
+		</div>
 	
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
+		<!-- Footer -->
+		<div id="contact" class="container-fluid bg-secondary text-white px-4 py-5">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-lg-9">
+						<h1>Kontakt</h1>
+						<p>Berätta vad du behöver så återkopplar jag till dig snarast möjligt.</p>
+						<a class="text-decoration-none text-reset" href="mailto:daniel@wibai.se"><i class="bi bi-envelope"></i>&nbsp; daniel@wibai.se</a><br/>
+						<a class="text-decoration-none text-reset" href="https://www.linkedin.com/in/daniel-wikman" target="_blank"><i class="bi bi-linkedin"></i>&nbsp; linkedin.com/in/daniel-wikman</a>
+					</div>
+					<div class="col-lg-3">
+						<p class="fs-5 pt-4">Dela vår hemsida:<br/>
+							<a class="text-reset" href="http://www.facebook.com/share.php?u=https://www.wibai.se" target="_blank"><i class="bi bi-facebook fs-3" role="img" aria-label="Dela på Facebook"></i></a>&nbsp;
+							<a class="text-reset" href="http://www.twitter.com/share?url=https://www.wibai.se" target="_blank"><i class="bi bi-twitter fs-3" role="img" aria-label="Dela på Twitter"></i></a>&nbsp;
+							<a class="text-reset" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.wibai.se" target="_blank"><i class="bi bi-linkedin fs-3" role="img" aria-label="Dela på LinkedIn"></i></a>&nbsp;
+							<a class="text-reset" href="mailto:?subject=Länk till WIBAI Redovisning &body=https://www.wibai.se" target="_blank"><i class="bi bi-at fs-3" role="img" aria-label="Dela via E-post"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+		<!-- Optional JavaScript; choose one of the two! -->
+    
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-			  // Get all "navbar-burger" elements
-			  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+		-->
 
-			  // Check if there are any navbar burgers
-			  if ($navbarBurgers.length > 0) {
-
-			    // Add a click event on each of them
-			    $navbarBurgers.forEach( el => {
-			      el.addEventListener('click', () => {
-
-				// Get the target from the "data-target" attribute
-				const target = el.dataset.target;
-				const $target = document.getElementById(target);
-
-				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-				el.classList.toggle('is-active');
-				$target.classList.toggle('is-active');
-
-			      });
-			    });
-			  }
-
-			});
-		</script>
 	</body>
 </html>
